@@ -26,8 +26,7 @@ jobs:
       - name: Create Temporary Directory
         id: create-temp-dir
         run: |
-          mkdir -p "${RUNNER_WORKSPACE}/mkdocs"
-          TEMP_DIR=$(mktemp -d -p "${RUNNER_WORKSPACE}/mkdocs")
+          TEMP_DIR=$(mktemp -d -p "${GITHUB_WORKSPACE}")
           echo "TEMP_DIR=$TEMP_DIR" >> $GITHUB_ENV
 
       - name: Clone Squidfunk
