@@ -60,7 +60,6 @@ RUN apt-get install -y \
     libopenjp2-7-dev \
     openssh-client \
     tini \
-    yarn \
     xvfb \
     weasyprint \
     zlib1g-dev
@@ -68,6 +67,9 @@ RUN apt-get install -y \
 # Install Node.js and npm (from official Node.js distribution)
 RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - && \
     apt-get install -y nodejs
+
+# Install yarn via npm after Node.js is installed
+RUN npm install -g yarn
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
