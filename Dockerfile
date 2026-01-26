@@ -28,7 +28,7 @@ COPY pyproject.toml pyproject.toml
 # Install system dependencies
 RUN mkdir -p /etc/apt/keyrings
 RUN curl -sL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg && \
-    echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_22.x nodistro main" >> /etc/apt/sources.list.d/nodesource.list
+    echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_24.x nodistro main" >> /etc/apt/sources.list.d/nodesource.list
 
 RUN apt-get update
 
@@ -65,7 +65,7 @@ RUN apt-get install -y \
     zlib1g-dev
 
 # Install Node.js and npm (from official Node.js distribution)
-RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - && \
+RUN curl -fsSL https://deb.nodesource.com/setup_24.x | bash - && \
     apt-get install -y nodejs
 
 # Install yarn via npm after Node.js is installed

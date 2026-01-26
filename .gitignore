@@ -1,0 +1,175 @@
+# ============================================================================
+# MkDocs Build Artifacts
+# ============================================================================
+/site/                          # MkDocs build output
+/.cache/                        # Plugin cache directory
+/.mkdocs/                       # MkDocs cache
+
+# ============================================================================
+# Python Artifacts
+# ============================================================================
+__pycache__/                    # Python bytecode cache
+*.py[cod]                       # Compiled Python (.pyc, .pyo, .pyd)
+*$py.class                      # Python class files
+*.so                            # Compiled extensions
+.Python                         # Python symlink
+/venv/                          # Virtual environment
+/env/                           # Alternative venv name
+/ENV/                           # Alternative venv name
+/.venv/                         # Hidden venv
+*.egg                           # Python eggs
+*.egg-info/                     # Egg metadata
+/.eggs/                         # Eggs directory
+/dist/                          # Distribution files
+/build/                         # Build directory
+/.pytest_cache/                 # Pytest cache
+/.tox/                          # Tox testing
+/.coverage                      # Coverage reports
+/.coverage.*
+/htmlcov/                       # HTML coverage reports
+*.cover                         # Coverage files
+*.log                           # Log files
+
+# ============================================================================
+# Node.js & JavaScript
+# ============================================================================
+/node_modules/                  # npm packages
+npm-debug.log*                  # npm debug logs
+yarn-debug.log*                 # yarn debug logs
+yarn-error.log*                 # yarn error logs
+.npm                            # npm cache
+.yarn-integrity                 # yarn integrity file
+
+# Lock files (uncomment to ignore if not using in CI/CD)
+# /package-lock.json
+# /yarn.lock
+
+# ============================================================================
+# Playwright & Browser Automation
+# ============================================================================
+/ms-playwright/                 # Playwright browser binaries
+/.playwright/                   # Playwright cache
+/test-results/                  # Test results directory
+/playwright-report/             # Playwright HTML reports
+/playwright/.cache/             # Playwright cache
+
+# ============================================================================
+# IDE & Editor Files
+# ============================================================================
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs (PyCharm, WebStorm, IntelliJ)
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# Vim
+*.swp
+*.swo
+*~
+.*.swp
+.*.swo
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ============================================================================
+# macOS
+# ============================================================================
+.DS_Store                       # Finder metadata
+.DS_Store?
+._*                             # Resource forks
+.AppleDouble                    # AppleDouble files
+.LSOverride                     # Custom folder icons
+.DocumentRevisions-V100         # Document versions
+.fseventsd                      # File system events
+.Spotlight-V100                 # Spotlight metadata
+.TemporaryItems                 # Temporary items
+.Trashes                        # Trash metadata
+.VolumeIcon.icns                # Volume icon
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# ============================================================================
+# Windows
+# ============================================================================
+Thumbs.db                       # Thumbnail cache
+Thumbs.db:encryptable           # Encrypted thumbnails
+ehthumbs.db                     # Explorer thumbnails
+ehthumbs_vista.db               # Vista thumbnails
+*.stackdump                     # Stack dumps
+[Dd]esktop.ini                  # Desktop config
+$RECYCLE.BIN/                   # Recycle bin
+*.lnk                           # Windows shortcuts
+*.cab                           # Cabinet files
+*.msi                           # Installer files
+*.msix                          # MSIX packages
+*.msm                           # Merge modules
+*.msp                           # Patch files
+
+# ============================================================================
+# Linux
+# ============================================================================
+*~                              # Backup files
+.fuse_hidden*                   # FUSE hidden files
+.directory                      # KDE directory settings
+.Trash-*                        # Trash folders
+.nfs*                           # NFS temporary files
+
+# ============================================================================
+# Docker Artifacts
+# ============================================================================
+.dockerignore                   # Docker ignore file (if custom)
+docker-compose.override.yml     # Local docker-compose overrides
+.docker/                        # Docker build cache
+
+# ============================================================================
+# Environment & Configuration
+# ============================================================================
+.env                            # Environment variables
+.env.local                      # Local environment
+.env.*.local                    # Environment-specific
+.envrc                          # direnv configuration
+
+# ============================================================================
+# Temporary & Backup Files
+# ============================================================================
+*.tmp                           # Temporary files
+*.temp                          # Temporary files
+*.bak                           # Backup files
+*.backup                        # Backup files
+*.old                           # Old files
+*.orig                          # Original files
+*.rej                           # Patch reject files
+.tmp/                           # Temporary directory
+/tmp/                           # Temporary directory
+*.swp                           # Swap files
+
+# ============================================================================
+# Git-related
+# ============================================================================
+*.orig                          # Merge conflict originals
+*.BACKUP.*                      # Merge backups
+*.BASE.*                        # Merge base
+*.LOCAL.*                       # Merge local
+*.REMOTE.*                      # Merge remote
+*_BACKUP_*                      # Merge backup
+*_BASE_*                        # Merge base
+*_LOCAL_*                       # Merge local
+*_REMOTE_*                      # Merge remote
