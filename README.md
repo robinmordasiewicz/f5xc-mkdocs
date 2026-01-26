@@ -512,7 +512,7 @@ docker run --rm \
 - **MkDocs**: 1.6.1
 - **Material for MkDocs**: 9.7.1
 - **Python**: 3.11
-- **Node.js**: 22.x
+- **Node.js**: 24.x
 - **Total Plugins**: 36 packages (131 with dependencies)
 
 ### Update History
