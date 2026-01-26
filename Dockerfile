@@ -105,11 +105,8 @@ RUN mkdir -p /var/cache/fontconfig && \
     fc-cache -f
 
 # Configure git
-RUN mkdir -p /tmp/docs
-RUN mkdir -p /tmp/site
-RUN git config --system --add safe.directory /tmp/docs 
-RUN git config --system --add safe.directory /tmp/site
-RUN echo "INHERIT: docs/theme/mkdocs.yml" > "/tmp/mkdocs.yml"
+RUN git config --system --add safe.directory /docs
+RUN git config --system --add safe.directory /site
 
 # From empty image
 FROM scratch
@@ -121,6 +118,6 @@ COPY --from=build / /
 EXPOSE 8000
 
 # Start development server by default
-WORKDIR /tmp
+WORKDIR /docs
 ENTRYPOINT ["/usr/bin/tini", "--", "mkdocs"]
 CMD ["serve", "--dev-addr=0.0.0.0:8000"]
