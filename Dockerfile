@@ -124,6 +124,8 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     apt-get install -y --no-install-recommends \
         ca-certificates \
         chromium \
+        tesseract-ocr \
+        tesseract-ocr-eng \
         fonts-dejavu \
         fonts-droid-fallback \
         fonts-freefont-ttf \
@@ -170,7 +172,8 @@ COPY --from=build /var/cache/fontconfig /var/cache/fontconfig
 # Set up directories with proper permissions
 RUN mkdir -p /docs /site && \
     chown -R mkdocs:mkdocs /docs /site /ms-playwright /var/cache/fontconfig && \
-    chmod -R 755 /ms-playwright /var/cache/fontconfig
+    chmod -R 755 /ms-playwright && \
+    chmod 777 /var/cache/fontconfig
 
 # Switch to non-root user
 USER mkdocs:mkdocs
