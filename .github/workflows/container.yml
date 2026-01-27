@@ -29,6 +29,20 @@ jobs:
           TEMP_DIR=$(mktemp -d -p "${GITHUB_WORKSPACE}")
           echo "TEMP_DIR=$TEMP_DIR" >> $GITHUB_ENV
 
+      - name: Clone Squidfunk
+        uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871
+        with:
+          repository: squidfunk/mkdocs-material
+          path: ${{ env.TEMP_DIR }}
+
+      - name: Copy Squidfunk files
+        shell: bash
+        run: |
+          cp -a $TEMP_DIR/material ./
+          cp -a $TEMP_DIR/package.json ./
+          cp -a $TEMP_DIR/README.md ./
+          cp -a $TEMP_DIR/pyproject.toml ./
+
       - name: Free Disk Space
         uses: jlumbroso/free-disk-space@main
         with:
