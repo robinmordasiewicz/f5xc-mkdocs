@@ -1,0 +1,52 @@
+# Git
+.git
+.github
+.gitignore
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info
+.eggs
+*.egg
+
+# Node
+node_modules/
+
+# Playwright browsers (large, installed during build)
+/ms-playwright/
+
+# Build artifacts
+/site/
+/.cache/
+dist/
+build/
+
+# IDE and editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker files (not needed in context)
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Documentation (not needed in build)
+*.md
+!README.md
+
+# Test files
+tests/
+test/
+*.test.js
+*.spec.js
