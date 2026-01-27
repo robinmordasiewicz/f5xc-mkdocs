@@ -56,6 +56,7 @@ mkdocs-asciinema-player>=1.1.0,<2.0.0
 # ----------------------------------------------------------------------------
 # Using mkdocs-with-pdf (most feature-rich)
 mkdocs-with-pdf>=0.9.3,<1.0.0
+mkdocs-page-pdf>=0.1.1,<1.0.0
 
 # ----------------------------------------------------------------------------
 # Content Enhancement
