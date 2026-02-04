@@ -28,6 +28,7 @@ mkdocstrings[crystal,python]>=1.0.2,<2.0.0
 # ----------------------------------------------------------------------------
 mkdocs-macros-plugin>=1.5.0,<2.0.0
 mkdocs-include-markdown-plugin>=7.2.1,<8.0.0
+mkdocs-placeholder-plugin>=0.5.1,<1.0.0
 
 # ----------------------------------------------------------------------------
 # Git Integration & Attribution
