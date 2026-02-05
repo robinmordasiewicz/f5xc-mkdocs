@@ -133,6 +133,13 @@ $RECYCLE.BIN/                   # Recycle bin
 .nfs*                           # NFS temporary files
 
 # ============================================================================
+# Cloned Build Dependencies (from squidfunk/mkdocs-material)
+# ============================================================================
+/material/                      # Material theme templates (cloned at build time)
+/package.json                   # From mkdocs-material repo
+/pyproject.toml                 # From mkdocs-material repo
+
+# ============================================================================
 # Docker Artifacts
 # ============================================================================
 .dockerignore                   # Docker ignore file (if custom)
